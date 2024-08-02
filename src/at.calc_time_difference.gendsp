@@ -1,0 +1,167 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 4,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 259.0, 125.0, 841.0, 563.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 386.0, 515.0, 378.0, 22.0 ],
+					"text" : "out 2 @comment (sig~) click reference post threshold (for monitoring)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 237.0, 19.0, 299.0, 34.0 ],
+					"text" : "calculate running latency between two click~ inputs in samples"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "Param thresh(0.1);\r\n\r\n// detect if click_delayed is louder than threshold\r\n// if so, trigger 1 to open the latch.\r\n// adjust threshold value to control latch time.\r\ncd = in1; // click delayed\r\ncd_abs = abs(cd) > thresh;\r\ncd_abs_change = change(cd_abs);\r\ncd_abs_change_gate = cd_abs_change == 1; // scale between 0 and 1\r\n\r\n// click delayed signal (for monitoring)\r\nout1 = cd_abs_change_gate;\r\n\r\n// count samples, reset when a new click~ is received\r\ncr = in2; // click reference\r\ncr_abs = abs(cr) > thresh;\r\ncr_abs_change = change(cr_abs);\r\ncr_abs_change_gate = cr_abs_change == 1; // scale between 0 and 1\r\n\r\ncounter = plusequals(1, cr_abs_change_gate);\r\n\r\n// click reference signal (for monitoring)\r\nout2 = cr_abs_change_gate;\r\n\r\n// click delayed opens the latch and lets the counter value through.\r\nlatch1 = latch(counter, cd_abs_change_gate);\r\n\r\n// latency in samples.\r\nout3 = latch1;",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 14.5, 69.0, 762.0, 388.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 14.5, 479.0, 369.0, 22.0 ],
+					"text" : "out 1 @comment (sig~) click delayed post threshold (for monitoring)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 560.0, 31.0, 208.0, 22.0 ],
+					"text" : "in 2 @comment (sig~) click reference"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hint" : "click delayed",
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 14.5, 31.0, 198.0, 22.0 ],
+					"text" : "in 1 @comment (sig~) click delayed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 411.5, 479.0, 420.0, 22.0 ],
+					"text" : "out 3 @comment (sig~) latency between reference and delayed in samples"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-12", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+ ],
+		"autosave" : 0,
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
+	}
+
+}
