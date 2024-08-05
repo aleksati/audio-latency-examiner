@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 4,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 47.0, 62.0, 1328.0, 412.0 ],
+		"rect" : [ 362.0, 226.0, 1328.0, 412.0 ],
 		"openrect" : [ 0.0, 0.0, 1328.692798614501953, 412.795199155807495 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -142,7 +142,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 14.0,
-					"hint" : "Sometimes called Buffer size",
+					"hint" : "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
 					"id" : "obj-43",
 					"items" : 512,
 					"maxclass" : "umenu",
@@ -177,6 +177,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 14.0,
+					"hint" : "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
 					"id" : "obj-31",
 					"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512 ],
 					"maxclass" : "umenu",
@@ -211,6 +212,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 14.0,
+					"hint" : "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
 					"id" : "obj-18",
 					"items" : [ 22050, ",", 32000, ",", 44100, ",", 48000, ",", 64000, ",", 88200, ",", 96000, ",", 128000, ",", 176400, ",", 192000 ],
 					"maxclass" : "umenu",
@@ -1086,7 +1088,7 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-70",
-					"items" : [ "None", ",", "ad_asio", "ASIO Fireface USB", ",", "ad_asio", "ASIO4ALL v2", ",", "ad_asio", "DN32-USB ASIO Driver", ",", "ad_asio", "FlexASIO", ",", "ad_asio", "Focusrite Thunderbolt ASIO", ",", "ad_asio", "Focusrite USB ASIO", ",", "ad_asio", "JackRouter", ",", "ad_asio", "MOTU M Series", ",", "ad_asio", "UMC ASIO Driver", ",", "ad_directsound", "", ",", "ad_mme", "", ",", "NonRealTime", ",", "ad_portaudio", "MME", ",", "ad_portaudio", "Windows DirectSound", ",", "ad_portaudio", "Windows WASAPI", ",", "ad_portaudio", "Windows WDM-KS" ],
+					"items" : [ "None", ",", "ad_asio", "ASIO Fireface USB", ",", "ad_asio", "ASIO4ALL v2", ",", "ad_asio", "AudioBox ASIO Driver", ",", "ad_asio", "FlexASIO", ",", "ad_asio", "ioStation ASIO Driver", ",", "ad_asio", "JackRouter", ",", "ad_asio", "MOTU Audio ASIO", ",", "ad_asio", "MOTU M Series", ",", "ad_asio", "ASIO PreSonus FireStudio", ",", "ad_asio", "Quantum ASIO driver", ",", "ad_asio", "Revelator ASIO", ",", "ad_asio", "Studio 192 ASIO", ",", "ad_asio", "Studio USB ASIO Driver", ",", "ad_asio", "StudioLive AR ASIO", ",", "ad_asio", "StudioLive Classic USB", ",", "ad_asio", "StudioLive Series III ASIO", ",", "ad_asio", "UMC ASIO Driver", ",", "ad_directsound", "", ",", "ad_mme", "", ",", "NonRealTime", ",", "ad_portaudio", "MME", ",", "ad_portaudio", "Windows DirectSound", ",", "ad_portaudio", "Windows WASAPI", ",", "ad_portaudio", "Windows WDM-KS", ",", "ad_rewire" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1366,7 +1368,6 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "vst~[1]",
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "vst~",
 							"parameter_type" : 3
 						}
@@ -1395,7 +1396,7 @@
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+							"blob" : "691.VMjLgnp....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -1417,7 +1418,7 @@
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+										"blob" : "691.VMjLgnp....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 									}
 ,
 									"fileref" : 									{
@@ -1425,7 +1426,7 @@
 										"filename" : "ValhallaSpaceModulator.maxsnap",
 										"filepath" : "~/OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "3817f44811c65f88c4e3efef44ce0dcb"
+										"snapshotfileid" : "39772cacc1d6d6918edafaf01bc1f7d2"
 									}
 
 								}
@@ -1570,7 +1571,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
-					"hint" : "",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.",
 					"id" : "obj-452",
 					"maxclass" : "number",
 					"maximum" : 100,
@@ -1590,7 +1591,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
-					"hint" : "",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.\n\nPS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value. ",
 					"id" : "obj-453",
 					"maxclass" : "number",
 					"maximum" : 100,
@@ -1720,7 +1721,7 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 14.0,
-					"hint" : "Specify the audio channels that go to and from the device you want to measure.",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.",
 					"id" : "obj-437",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1739,7 +1740,7 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 14.0,
-					"hint" : "Specify the audio channels that go to and from the device you want to measure. PS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value here. ",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.\n\nPS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value here. ",
 					"id" : "obj-438",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1758,7 +1759,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
-					"hint" : "",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.\n\nPS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value. ",
 					"id" : "obj-439",
 					"maxclass" : "number",
 					"maximum" : 100,
@@ -1778,7 +1779,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
-					"hint" : "",
+					"hint" : "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.",
 					"id" : "obj-440",
 					"maxclass" : "number",
 					"maximum" : 100,
@@ -2300,8 +2301,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 4,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2889,8 +2890,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 4,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3331,7 +3332,7 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 14.0,
-					"hint" : "Specify the name of the device you want to measure. This is stored in the data. ",
+					"hint" : "Specify the name of the device you intend to measure. This is stored in the data. ",
 					"id" : "obj-327",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -3347,7 +3348,7 @@
 			}
 , 			{
 				"box" : 				{
-					"hint" : "The name of the measurement object/device you intend to measure.",
+					"hint" : "Specify the name of the device you intend to measure. This is stored in the data. ",
 					"id" : "obj-328",
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -3534,8 +3535,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 4,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4265,12 +4266,11 @@
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 5,
-					"outlettype" : [ "dictionary", "", "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
 					"patching_rect" : [ 1700.0, 2145.0, 313.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"legacy" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
@@ -4364,7 +4364,6 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5047,7 +5046,6 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[3]",
 							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5187,7 +5185,7 @@
 					"fontsize" : 14.0,
 					"hint" : "Select a plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : [ "Analog Lab V", ",", "Ghz Vulf Compressor 3", ",", "Polysix", ",", "Prophet V3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "SPAN", ",", "TAL-Chorus-LX", ",", "ValhallaFreqEcho", ",", "ValhallaSpaceModulator", ",", "ValhallaSupermassive", ",", "ambix_binaural_o1", ",", "ambix_binaural_o3", ",", "ambix_converter_o1", ",", "ambix_converter_o3", ",", "ambix_decoder_o1", ",", "ambix_decoder_o3", ",", "ambix_directional_loudness_o1", ",", "ambix_directional_loudness_o3", ",", "ambix_encoder_i2_o1", ",", "ambix_encoder_i2_o3", ",", "ambix_encoder_i4_o1", ",", "ambix_encoder_i4_o3", ",", "ambix_encoder_i6_o1", ",", "ambix_encoder_i6_o3", ",", "ambix_encoder_i8_o1", ",", "ambix_encoder_i8_o3", ",", "ambix_encoder_o1", ",", "ambix_encoder_o3", ",", "ambix_maxre_o1", ",", "ambix_maxre_o3", ",", "ambix_mirror_o1", ",", "ambix_mirror_o3", ",", "ambix_rotator_o1", ",", "ambix_rotator_o3", ",", "ambix_rotator_z_o1", ",", "ambix_rotator_z_o3", ",", "ambix_vmic_o1", ",", "ambix_vmic_o3", ",", "ambix_warp_o1", ",", "ambix_warp_o3", ",", "ambix_widening_o1", ",", "ambix_widening_o3", ",", "Analog Lab V", ",", "Ghz Vulf Compressor 3", ",", "mcfx_convolver128", ",", "mcfx_convolver16", ",", "mcfx_convolver2", ",", "mcfx_convolver24", ",", "mcfx_convolver32", ",", "mcfx_convolver36", ",", "mcfx_convolver4", ",", "mcfx_convolver50", ",", "mcfx_convolver64", ",", "mcfx_convolver8", ",", "mcfx_delay128", ",", "mcfx_delay16", ",", "mcfx_delay2", ",", "mcfx_delay24", ",", "mcfx_delay32", ",", "mcfx_delay36", ",", "mcfx_delay4", ",", "mcfx_delay50", ",", "mcfx_delay64", ",", "mcfx_delay8", ",", "mcfx_filter128", ",", "mcfx_filter16", ",", "mcfx_filter2", ",", "mcfx_filter24", ",", "mcfx_filter32", ",", "mcfx_filter36", ",", "mcfx_filter4", ",", "mcfx_filter50", ",", "mcfx_filter64", ",", "mcfx_filter8", ",", "mcfx_gain_delay128", ",", "mcfx_gain_delay16", ",", "mcfx_gain_delay2", ",", "mcfx_gain_delay24", ",", "mcfx_gain_delay32", ",", "mcfx_gain_delay36", ",", "mcfx_gain_delay4", ",", "mcfx_gain_delay50", ",", "mcfx_gain_delay64", ",", "mcfx_gain_delay8", ",", "mcfx_meter128", ",", "mcfx_meter16", ",", "mcfx_meter2", ",", "mcfx_meter24", ",", "mcfx_meter32", ",", "mcfx_meter36", ",", "mcfx_meter4", ",", "mcfx_meter50", ",", "mcfx_meter64", ",", "mcfx_meter8", ",", "Polysix", ",", "Prophet V3", ",", "SonoBus" ],
+					"items" : [ "Analog Lab V", ",", "Ghz Vulf Compressor 3", ",", "Prophet V3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "TAL-Chorus-LX", ",", "ValhallaFreqEcho", ",", "ValhallaSpaceModulator", ",", "ValhallaSupermassive", ",", "Analog Lab V", ",", "compass_6DoF", ",", "compass_binaural", ",", "compass_binauralVR", ",", "compass_decoder", ",", "compass_gravitator", ",", "compass_sidechain", ",", "compass_spatedit", ",", "compass_tracker", ",", "compass_upmixer", ",", "cropac_binaural", ",", "Ghz Vulf Compressor 3", ",", "hades_renderer", ",", "hodirac_binaural", ",", "hodirac_decoder", ",", "hodirac_upmixer", ",", "HOSIRR", ",", "Prophet V3", ",", "SonoBus", ",", "sparta_6DoFconv", ",", "sparta_ambiBIN", ",", "sparta_ambiDEC", ",", "sparta_ambiDRC", ",", "sparta_ambiENC", ",", "sparta_ambiRoomSim", ",", "sparta_array2sh", ",", "sparta_beamformer", ",", "sparta_binauraliser", ",", "sparta_binauraliser_nf", ",", "sparta_decorrelator", ",", "sparta_dirass", ",", "sparta_matrixconv", ",", "sparta_multiconv", ",", "sparta_panner", ",", "sparta_pitchShifter", ",", "sparta_powermap", ",", "sparta_rotator", ",", "sparta_sldoa", ",", "sparta_spreader", ",", "UltrasonicSuperHearing" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5276,7 +5274,6 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5559,7 +5556,6 @@
 							"parameter_enum" : [ "External", "Internal", "VST" ],
 							"parameter_longname" : "live.tab",
 							"parameter_mmax" : 2,
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9
@@ -7795,7 +7791,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "About.maxpat",
-				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -7803,27 +7799,27 @@
 , 			{
 				"name" : "ValhallaSpaceModulator.maxsnap",
 				"bootpath" : "~/OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.calc_time_difference.gendsp",
-				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.scale_app_height.js",
-				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.scale_app_width.js",
-				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
