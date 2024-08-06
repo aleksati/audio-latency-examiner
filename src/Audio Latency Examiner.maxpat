@@ -10,8 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 362.0, 226.0, 1328.0, 412.0 ],
-		"openrect" : [ 0.0, 0.0, 1328.692798614501953, 412.795199155807495 ],
+		"openrect" : [ 50.0, 50.0, 1378.690000000000055, 462.79000000000002 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"title" : "Audio Latency Examiner",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1080.0, 21.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1183.0, 229.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "message",
@@ -717,13 +740,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1144",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1128.0, 157.0, 353.738378524780273, 36.0 ],
-					"text" : "zoomfactor 1, window exec, window size 0. 0. 1328.692799 412.795199, window exec"
+					"patching_rect" : [ 1128.0, 157.0, 427.0, 22.0 ],
+					"text" : "zoomfactor 1, window exec, window size 50. 50. 1378.69 462.79, window exec"
 				}
 
 			}
@@ -791,13 +813,13 @@
 					"patching_rect" : [ 257.355512619018555, 49.0, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "C:/Users/aleksati/GitHub/audio-latency-examiner/src/logo.icns",
+						"appicon_mac" : "Macintosh HD:/Users/riccardosimionato/Downloads/src/logo.icns",
 						"appicon_win" : "C:/Users/aleksati/GitHub/audio-latency-examiner/src/logo.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 0,
-						"cefsupport" : 1,
-						"copysupport" : 1,
+						"cefsupport" : 0,
+						"copysupport" : 0,
 						"database" : 0,
 						"extensions" : 0,
 						"gensupport" : 1,
@@ -1389,14 +1411,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "TAL-Chorus-LX.vst3info",
-							"plugindisplayname" : "TAL-Chorus-LX",
+							"pluginname" : "Chorus JUN-6.vstinfo",
+							"plugindisplayname" : "Chorus JUN-6",
 							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 1302673528,
+							"pluginsaveduniqueid" : 1128944950,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "691.VMjLgnp....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+							"blob" : "3224.CMlaKA....fQPMDZ....ALjRUYC...P.......kbuclbg01PnElamUVL.....................v.WlX........fIF........HiLfLWYxkVXrkldgQWZu4lN5DlbigVZ1UFHw.CHv.xMf.CH2.xMfPTYlEVcrQGH1.xTzUlbk8FH1DCH2.RPxQWcxkVXffCHTUVavwVXzUFHv.BLf.CHv.RLf.CHv.BHwTSN4TSMxXCN3.RLv.RLt.iKv3hLxjiLf.CHv.BLf.CHv.BLf.CHv.BHv.BLfDCHv.BLf.CHz.BU4AWYffCHTUVavwVXzUFHv.BLf.CH2.BLf.CHv.BLf.CHv.RLz.BLf.CHv.hMfHTdvE1byABLfTCHDIWZ1UFHv3RMfDCLfjjavUGcfzzajUFHv.RL4.hR041a1LDZuIWcy8EQkAGcn0zbf.iK2PSNxDSL3TCHxLCHJUmauYyPn8lb0M2WMElaLYzSPgVXyUFHw.hLv.hR041a1LDZuIWcy8USoQVZSkmaiABLfHCMfnTct8lMCg1axU2be0zajU1TkwVYiQ2axABLfDCNfnTct8lMCg1axU2beIUXzUFR5ABLtHCLyHiM0jSNfHCLfnTct8lMCg1axU2beIUXzU1T441Xf.iKwPCNwPCNwTCHwfCHJUmauYyPn8lb0M2WWUFcMkFdf.iK0.RLx.RSIQTRfLDZg4lakwFHv.RLx.hSuk1bkAhUuwVcsUFHv3RLfbCHPElatklamABLtTCHw.CHVElboEFco8layABLfPiLf.CHwfCHMkFYoMzatQmbuwFakImSg0VYfLiLf...........................................fDCMf70WHc0WMEFbvUFYe8ELfPCH+++++CRLz.xWegzUe0TXvAWYj80Ww.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeECLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwDCHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULx.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEyLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwPCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL0.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEiMfPCH+++++CRL0.xWegzUe0TXvAWYj80WwbCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL3.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeESNfPCH+++++CRLz.xWegzUe0TXvAWYj80Wx.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeMCHz.x+++++fDCMf70WHc0WMEFbvUFYe8EMfPCH+++++CRLz.xWegzUe0TXvAWYj80W0.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeYCHz.x+++++fDCMf70WHc0WMEFbvUFYe80MfPCH+++++CRLz.xWegzUe0TXvAWYj80W3.BMf7++++OHwPCHe8ERW8USgAGbkQ1WekCHz.x+++++fDSLf70WMEFbvUFYe8ELfPCH+++++CRLw.xWe0TXvAWYj80Ww.BMf7++++OHwHCHe8USgAGbkQ1WeECLfPCH+++++CRLx.xWe0TXvAWYj80WwDCHz.x+++++fDiLf70WMEFbvUFYe8ULx.BMf7++++OHwHCHe8USgAGbkQ1WeEyLfPCH+++++CRLx.xWe0TXvAWYj80WwPCHz.x+++++fDiLf70WMEFbvUFYe8UL0.BMf7++++OHwHCHe8USgAGbkQ1WeEiMfPCH+++++CRLx.xWe0TXvAWYj80WwbCHz.x+++++fDiLf70WMEFbvUFYe8UL3.BMf7++++OHwHCHe8USgAGbkQ1WeESNfPCH+++++CRLw.xWe0TXvAWYj80Wx.BMf7++++OHwDCHe8USgAGbkQ1WeMCHz.x+++++fDSLf70WMEFbvUFYe8EMfPCH+++++CRLw.xWe0TXvAWYj80W0.BMf7++++OHwDCHe8USgAGbkQ1WeYCHz.x+++++fDSLf70WMEFbvUFYe80MfPCH+++++CRLw.xWe0TXvAWYj80W3.BMf7++++OHwDCHe8USgAGbkQ1WekCHz.x+++++fHyMf70WSQUPTUzWeIUQSUjTVUDQe8USOQTRFkTQDARLf.iBxHCHyUlboEFaooWXzk1atoiNgI2XnklckARLv.BLfbCHv.xMfbCHDUlYgUGazAhMfLEckIWYuAhMw.xMfDjbzUmboEFH3.BUk0FbrEFckABLf.CHv.BLfDCHv.BLf.RL0jSN0TiL1fCNfDCLfDiKv3BLtHiL4HCHv.BLf.CHv.BLf.CHv.BLf.BLf.CHw.BLf.CHv.BMfPUdvUFH3.BUk0FbrEFckABLf.CHv.xMf.CHv.BLf.CHv.BLfDCMf.CHv.BLfXCHBkGbgM2bf.CH0.BQxklckABLtTCHw.CHI4Fb0QGHM8FYkABLfDSNfnTct8lMCg1axU2beQTYvQGZMMGHv3xMzjiLwDCN0.hLy.hR041a1LDZuIWcy8USg4FSF8DTnE1bkARLfHCLfnTct8lMCg1axU2be0TZjk1T441Xf.CHxPCHJUmauYyPn8lb0M2WM8FYkMUYrU1Xz8lbf.CHwfCHJUmauYyPn8lb0M2WREFckgjdf.iKx.yLxXSM4jCHx.CHJUmauYyPn8lb0M2WREFckMUdtMFHv3RLzfSLzfSL0.RL3.hR041a1LDZuIWcy80UkQWSogGHv3RMfDiLfzTRDkDHCgVXt4VYrABLfDiLf3zaoMWYfX0arUWakABLtDCH2.BTg4lao41Yf.iK0.RLv.hUgIWZgQWZu41bf.CHzHCHv.RL3.RSoQVZC8lazI2arwVYx4TXsUFHyHCH...........................................HwPCHe8ERW8USgAGbkQ1WeACHz.x+++++fDCMf70WHc0WMEFbvUFYe8ULfPCH+++++CRL0.xWegzUe0TXvAWYj80Ww.CHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULw.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEiLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwLCHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULz.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeESMfPCH+++++CRL0.xWegzUe0TXvAWYj80WwXCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL2.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeECNfPCH+++++CRL0.xWegzUe0TXvAWYj80WwjCHz.x+++++fDCMf70WHc0WMEFbvUFYe8kLfPCH+++++CRLz.xWegzUe0TXvAWYj80Wy.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeQCHz.x+++++fDCMf70WHc0WMEFbvUFYe8UMfPCH+++++CRLz.xWegzUe0TXvAWYj80W1.BMf7++++OHwPCHe8ERW8USgAGbkQ1WecCHz.x+++++fDCMf70WHc0WMEFbvUFYe8ENfPCH+++++CRLz.xWegzUe0TXvAWYj80W4.BMf7++++OHwDCHe8USgAGbkQ1WeACHz.x+++++fDSLf70WMEFbvUFYe8ULfPCH+++++CRLx.xWe0TXvAWYj80Ww.CHz.x+++++fDiLf70WMEFbvUFYe8ULw.BMf7++++OHwHCHe8USgAGbkQ1WeEiLfPCH+++++CRLx.xWe0TXvAWYj80WwLCHz.x+++++fDiLf70WMEFbvUFYe8ULz.BMf7++++OHwHCHe8USgAGbkQ1WeESMfPCH+++++CRLx.xWe0TXvAWYj80WwXCHz.x+++++fDiLf70WMEFbvUFYe8UL2.BMf7++++OHwHCHe8USgAGbkQ1WeECNfPCH+++++CRLx.xWe0TXvAWYj80WwjCHz.x+++++fDSLf70WMEFbvUFYe8kLfPCH+++++CRLw.xWe0TXvAWYj80Wy.BMf7++++OHwDCHe8USgAGbkQ1WeQCHz.x+++++fDSLf70WMEFbvUFYe8UMfPCH+++++CRLw.xWe0TXvAWYj80W1.BMf7++++OHwDCHe8USgAGbkQ1WecCHz.x+++++fDSLf70WMEFbvUFYe8ENfPCH+++++CRLw.xWe0TXvAWYj80W4.BMf7++++OHxbCHe80TTEDUE80WRUzTEIkUEQzWe0zSDkjQIUDQfDCHvn."
 						}
 ,
 						"snapshotlist" : 						{
@@ -1406,19 +1428,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "ValhallaSpaceModulator",
-									"origin" : "TAL-Chorus-LX.vst3info",
-									"type" : "VST3",
-									"subtype" : "AudioEffect",
+									"origin" : "Chorus JUN-6.vstinfo",
+									"type" : "VST",
+									"subtype" : "MidiEffect",
 									"embed" : 1,
 									"snapshot" : 									{
-										"pluginname" : "TAL-Chorus-LX.vst3info",
-										"plugindisplayname" : "TAL-Chorus-LX",
+										"pluginname" : "Chorus JUN-6.vstinfo",
+										"plugindisplayname" : "Chorus JUN-6",
 										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 1302673528,
+										"pluginsaveduniqueid" : 1128944950,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "691.VMjLgnp....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+										"blob" : "3224.CMlaKA....fQPMDZ....ALjRUYC...P.......kbuclbg01PnElamUVL.....................v.WlX........fIF........HiLfLWYxkVXrkldgQWZu4lN5DlbigVZ1UFHw.CHv.xMf.CH2.xMfPTYlEVcrQGH1.xTzUlbk8FH1DCH2.RPxQWcxkVXffCHTUVavwVXzUFHv.BLf.CHv.RLf.CHv.BHwTSN4TSMxXCN3.RLv.RLt.iKv3hLxjiLf.CHv.BLf.CHv.BLf.CHv.BHv.BLfDCHv.BLf.CHz.BU4AWYffCHTUVavwVXzUFHv.BLf.CH2.BLf.CHv.BLf.CHv.RLz.BLf.CHv.hMfHTdvE1byABLfTCHDIWZ1UFHv3RMfDCLfjjavUGcfzzajUFHv.RL4.hR041a1LDZuIWcy8EQkAGcn0zbf.iK2PSNxDSL3TCHxLCHJUmauYyPn8lb0M2WMElaLYzSPgVXyUFHw.hLv.hR041a1LDZuIWcy8USoQVZSkmaiABLfHCMfnTct8lMCg1axU2be0zajU1TkwVYiQ2axABLfDCNfnTct8lMCg1axU2beIUXzUFR5ABLtHCLyHiM0jSNfHCLfnTct8lMCg1axU2beIUXzU1T441Xf.iKwPCNwPCNwTCHwfCHJUmauYyPn8lb0M2WWUFcMkFdf.iK0.RLx.RSIQTRfLDZg4lakwFHv.RLx.hSuk1bkAhUuwVcsUFHv3RLfbCHPElatklamABLtTCHw.CHVElboEFco8layABLfPiLf.CHwfCHMkFYoMzatQmbuwFakImSg0VYfLiLf...........................................fDCMf70WHc0WMEFbvUFYe8ELfPCH+++++CRLz.xWegzUe0TXvAWYj80Ww.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeECLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwDCHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULx.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEyLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwPCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL0.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEiMfPCH+++++CRL0.xWegzUe0TXvAWYj80WwbCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL3.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeESNfPCH+++++CRLz.xWegzUe0TXvAWYj80Wx.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeMCHz.x+++++fDCMf70WHc0WMEFbvUFYe8EMfPCH+++++CRLz.xWegzUe0TXvAWYj80W0.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeYCHz.x+++++fDCMf70WHc0WMEFbvUFYe80MfPCH+++++CRLz.xWegzUe0TXvAWYj80W3.BMf7++++OHwPCHe8ERW8USgAGbkQ1WekCHz.x+++++fDSLf70WMEFbvUFYe8ELfPCH+++++CRLw.xWe0TXvAWYj80Ww.BMf7++++OHwHCHe8USgAGbkQ1WeECLfPCH+++++CRLx.xWe0TXvAWYj80WwDCHz.x+++++fDiLf70WMEFbvUFYe8ULx.BMf7++++OHwHCHe8USgAGbkQ1WeEyLfPCH+++++CRLx.xWe0TXvAWYj80WwPCHz.x+++++fDiLf70WMEFbvUFYe8UL0.BMf7++++OHwHCHe8USgAGbkQ1WeEiMfPCH+++++CRLx.xWe0TXvAWYj80WwbCHz.x+++++fDiLf70WMEFbvUFYe8UL3.BMf7++++OHwHCHe8USgAGbkQ1WeESNfPCH+++++CRLw.xWe0TXvAWYj80Wx.BMf7++++OHwDCHe8USgAGbkQ1WeMCHz.x+++++fDSLf70WMEFbvUFYe8EMfPCH+++++CRLw.xWe0TXvAWYj80W0.BMf7++++OHwDCHe8USgAGbkQ1WeYCHz.x+++++fDSLf70WMEFbvUFYe80MfPCH+++++CRLw.xWe0TXvAWYj80W3.BMf7++++OHwDCHe8USgAGbkQ1WekCHz.x+++++fHyMf70WSQUPTUzWeIUQSUjTVUDQe8USOQTRFkTQDARLf.iBxHCHyUlboEFaooWXzk1atoiNgI2XnklckARLv.BLfbCHv.xMfbCHDUlYgUGazAhMfLEckIWYuAhMw.xMfDjbzUmboEFH3.BUk0FbrEFckABLf.CHv.BLfDCHv.BLf.RL0jSN0TiL1fCNfDCLfDiKv3BLtHiL4HCHv.BLf.CHv.BLf.CHv.BLf.BLf.CHw.BLf.CHv.BMfPUdvUFH3.BUk0FbrEFckABLf.CHv.xMf.CHv.BLf.CHv.BLfDCMf.CHv.BLfXCHBkGbgM2bf.CH0.BQxklckABLtTCHw.CHI4Fb0QGHM8FYkABLfDSNfnTct8lMCg1axU2beQTYvQGZMMGHv3xMzjiLwDCN0.hLy.hR041a1LDZuIWcy8USg4FSF8DTnE1bkARLfHCLfnTct8lMCg1axU2be0TZjk1T441Xf.CHxPCHJUmauYyPn8lb0M2WM8FYkMUYrU1Xz8lbf.CHwfCHJUmauYyPn8lb0M2WREFckgjdf.iKx.yLxXSM4jCHx.CHJUmauYyPn8lb0M2WREFckMUdtMFHv3RLzfSLzfSL0.RL3.hR041a1LDZuIWcy80UkQWSogGHv3RMfDiLfzTRDkDHCgVXt4VYrABLfDiLf3zaoMWYfX0arUWakABLtDCH2.BTg4lao41Yf.iK0.RLv.hUgIWZgQWZu41bf.CHzHCHv.RL3.RSoQVZC8lazI2arwVYx4TXsUFHyHCH...........................................HwPCHe8ERW8USgAGbkQ1WeACHz.x+++++fDCMf70WHc0WMEFbvUFYe8ULfPCH+++++CRL0.xWegzUe0TXvAWYj80Ww.CHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULw.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeEiLfPCH+++++CRL0.xWegzUe0TXvAWYj80WwLCHz.x+++++fDSMf70WHc0WMEFbvUFYe8ULz.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeESMfPCH+++++CRL0.xWegzUe0TXvAWYj80WwXCHz.x+++++fDSMf70WHc0WMEFbvUFYe8UL2.BMf7++++OHwTCHe8ERW8USgAGbkQ1WeECNfPCH+++++CRL0.xWegzUe0TXvAWYj80WwjCHz.x+++++fDCMf70WHc0WMEFbvUFYe8kLfPCH+++++CRLz.xWegzUe0TXvAWYj80Wy.BMf7++++OHwPCHe8ERW8USgAGbkQ1WeQCHz.x+++++fDCMf70WHc0WMEFbvUFYe8UMfPCH+++++CRLz.xWegzUe0TXvAWYj80W1.BMf7++++OHwPCHe8ERW8USgAGbkQ1WecCHz.x+++++fDCMf70WHc0WMEFbvUFYe8ENfPCH+++++CRLz.xWegzUe0TXvAWYj80W4.BMf7++++OHwDCHe8USgAGbkQ1WeACHz.x+++++fDSLf70WMEFbvUFYe8ULfPCH+++++CRLx.xWe0TXvAWYj80Ww.CHz.x+++++fDiLf70WMEFbvUFYe8ULw.BMf7++++OHwHCHe8USgAGbkQ1WeEiLfPCH+++++CRLx.xWe0TXvAWYj80WwLCHz.x+++++fDiLf70WMEFbvUFYe8ULz.BMf7++++OHwHCHe8USgAGbkQ1WeESMfPCH+++++CRLx.xWe0TXvAWYj80WwXCHz.x+++++fDiLf70WMEFbvUFYe8UL2.BMf7++++OHwHCHe8USgAGbkQ1WeECNfPCH+++++CRLx.xWe0TXvAWYj80WwjCHz.x+++++fDSLf70WMEFbvUFYe8kLfPCH+++++CRLw.xWe0TXvAWYj80Wy.BMf7++++OHwDCHe8USgAGbkQ1WeQCHz.x+++++fDSLf70WMEFbvUFYe8UMfPCH+++++CRLw.xWe0TXvAWYj80W1.BMf7++++OHwDCHe8USgAGbkQ1WecCHz.x+++++fDSLf70WMEFbvUFYe8ENfPCH+++++CRLw.xWe0TXvAWYj80W4.BMf7++++OHxbCHe80TTEDUE80WRUzTEIkUEQzWe0zSDkjQIUDQfDCHvn."
 									}
 ,
 									"fileref" : 									{
@@ -1426,7 +1448,7 @@
 										"filename" : "ValhallaSpaceModulator.maxsnap",
 										"filepath" : "~/OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "39772cacc1d6d6918edafaf01bc1f7d2"
+										"snapshotfileid" : "83771325030605e3aa4631480a202984"
 									}
 
 								}
@@ -1969,7 +1991,7 @@
 							"gain" : 1.0
 						}
 , 						{
-							"in" : 3,
+							"in" : 1,
 							"out" : 1,
 							"gain" : 1.0
 						}
@@ -2015,7 +2037,7 @@
 						}
 , 						{
 							"in" : 1,
-							"out" : 3,
+							"out" : 1,
 							"gain" : 1.0
 						}
  ],
@@ -4302,7 +4324,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2080.0, 369.0, 221.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 361.249998316168785, 20.0, 150.0, 25.0 ],
+					"presentation_rect" : [ 361.249998316168785, 20.0, 136.0, 25.0 ],
 					"text" : "2. Choose Mode",
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -5185,7 +5207,7 @@
 					"fontsize" : 14.0,
 					"hint" : "Select a plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : [ "Analog Lab V", ",", "Ghz Vulf Compressor 3", ",", "Prophet V3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "TAL-Chorus-LX", ",", "ValhallaFreqEcho", ",", "ValhallaSpaceModulator", ",", "ValhallaSupermassive", ",", "Analog Lab V", ",", "compass_6DoF", ",", "compass_binaural", ",", "compass_binauralVR", ",", "compass_decoder", ",", "compass_gravitator", ",", "compass_sidechain", ",", "compass_spatedit", ",", "compass_tracker", ",", "compass_upmixer", ",", "cropac_binaural", ",", "Ghz Vulf Compressor 3", ",", "hades_renderer", ",", "hodirac_binaural", ",", "hodirac_decoder", ",", "hodirac_upmixer", ",", "HOSIRR", ",", "Prophet V3", ",", "SonoBus", ",", "sparta_6DoFconv", ",", "sparta_ambiBIN", ",", "sparta_ambiDEC", ",", "sparta_ambiDRC", ",", "sparta_ambiENC", ",", "sparta_ambiRoomSim", ",", "sparta_array2sh", ",", "sparta_beamformer", ",", "sparta_binauraliser", ",", "sparta_binauraliser_nf", ",", "sparta_decorrelator", ",", "sparta_dirass", ",", "sparta_matrixconv", ",", "sparta_multiconv", ",", "sparta_panner", ",", "sparta_pitchShifter", ",", "sparta_powermap", ",", "sparta_rotator", ",", "sparta_sldoa", ",", "sparta_spreader", ",", "UltrasonicSuperHearing" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5534,7 +5556,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 106.0, 721.0, 414.0, 77.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 361.249998316168785, 55.0, 413.0, 30.0 ],
+					"presentation_rect" : [ 361.249998316168785, 55.0, 413.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -7542,6 +7564,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1158", 0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-264", 0 ],
 					"source" : [ "obj-60", 0 ]
 				}
@@ -7579,6 +7608,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-723", 0 ],
 					"source" : [ "obj-656", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1155", 0 ],
+					"source" : [ "obj-67", 0 ]
 				}
 
 			}

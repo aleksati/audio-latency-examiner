@@ -3,15 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 4,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 119.0, 88.0, 650.0, 690.0 ],
-		"openrect" : [ 0.0, 0.0, 650.468395233154297, 690.0 ],
+		"openrect" : [ 50.0, 50.0, 700.399999999999977, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,16 +50,16 @@
 					"patching_rect" : [ 76.481359481811523, 14.708248853683472, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "C:/Users/aleksati/GitHub/audio-latency-examiner/src/logo.icns",
+						"appicon_mac" : "Macintosh HD:/Users/riccardosimionato/Downloads/src/logo.icns",
 						"appicon_win" : "C:/Users/aleksati/GitHub/audio-latency-examiner/src/logo.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 0,
 						"cefsupport" : 1,
-						"copysupport" : 1,
+						"copysupport" : 0,
 						"database" : 0,
 						"extensions" : 0,
-						"gensupport" : 1,
+						"gensupport" : 0,
 						"midisupport" : 0,
 						"noloadbangdefeating" : 0,
 						"overdrive" : 0,
@@ -166,7 +165,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.481359481811523, 338.01539134979248, 159.0, 48.0 ],
+					"patching_rect" : [ 32.481359481811523, 338.01539134979248, 159.0, 47.0 ],
 					"text" : "nomenu is to dsiable the Max console from opening when the standalone opens ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -203,7 +202,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.481359481811523, 392.01539134979248, 255.0, 75.0 ],
+					"patching_rect" : [ 154.481359481811523, 392.01539134979248, 255.0, 74.0 ],
 					"text" : "A trick to avoid users being able to adjust the window size when the app is loaded. The automatic scaling will adjust the size. However, for development, press the G key to enable the window adjust. ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -403,8 +402,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.228521347045898, 304.01539134979248, 253.609390258789062, 36.0 ],
-					"text" : "window zoomfactor 1, window exec, window size 0. 0. 650.468395 690., window exec"
+					"patching_rect" : [ 561.228521347045898, 304.01539134979248, 247.0, 35.0 ],
+					"text" : "window zoomfactor 1, window exec, window size 50. 50. 700.4 740., window exec"
 				}
 
 			}
@@ -442,7 +441,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.228521347045898, 526.01539134979248, 182.0, 62.0 ],
+					"patching_rect" : [ 596.228521347045898, 526.01539134979248, 182.0, 60.0 ],
 					"text" : "If the default App width is bigger than screen width, this object automatically scales (adjusts zoom factor) down the App UI.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -471,8 +470,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.397092700004578, 91.437597036361694, 54.0, 36.0 ],
-					"text" : ";\r\nmax quit"
+					"patching_rect" : [ 178.397092700004578, 91.437597036361694, 54.0, 35.0 ],
+					"text" : ";\rmax quit"
 				}
 
 			}

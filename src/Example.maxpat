@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 4,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 106.0, 653.0, 545.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-53",
+					"id" : "obj-7",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.0, 96.0, 113.0, 20.0 ],
-					"text" : "start measurement"
+					"patching_rect" : [ 246.5, 396.0, 137.0, 20.0 ],
+					"presentation_linecount" : 4,
+					"text" : "reference (post-gate)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 28.0, 194.0, 171.0, 20.0 ],
+					"text" : "noise gate / threshold amount"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 175.0, 290.0, 116.0, 20.0 ],
+					"text" : "delayed (post-gate)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 246.5, 418.0, 99.0, 56.0 ]
 				}
 
 			}
@@ -55,7 +89,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 263.0, 131.0, 20.0 ],
+					"patching_rect" : [ 428.0, 281.0, 131.0, 20.0 ],
 					"text" : "latency in miliseconds"
 				}
 
@@ -66,19 +100,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 309.0, 296.0, 92.0, 20.0 ],
+					"patching_rect" : [ 318.0, 314.0, 92.0, 20.0 ],
 					"text" : "sample latency"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 88.0, 76.0, 96.0, 20.0 ],
-					"text" : "proof of concept"
 				}
 
 			}
@@ -93,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 211.0, 323.0, 87.0, 22.0 ],
+					"patching_rect" : [ 428.0, 341.0, 87.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -105,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 211.0, 289.0, 87.0, 22.0 ],
+					"patching_rect" : [ 428.0, 307.0, 87.0, 22.0 ],
 					"text" : "sampstoms~"
 				}
 
@@ -117,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 215.0, 40.0, 69.0, 22.0 ],
+					"patching_rect" : [ 318.0, 76.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
@@ -130,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 215.0, 0.0, 32.0, 32.0 ]
+					"patching_rect" : [ 318.0, 34.0, 27.5, 27.5 ]
 				}
 
 			}
@@ -141,7 +164,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 77.0, 177.0, 104.0, 22.0 ],
+					"patching_rect" : [ 175.0, 148.0, 104.0, 22.0 ],
 					"text" : "delay~ 48000 200"
 				}
 
@@ -157,7 +180,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 309.0, 323.0, 106.0, 22.0 ],
+					"patching_rect" : [ 318.0, 341.0, 106.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -169,7 +192,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 77.0, 289.0, 94.0, 53.0 ]
+					"patching_rect" : [ 175.0, 314.0, 99.0, 56.0 ]
 				}
 
 			}
@@ -180,7 +203,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 215.0, 76.0, 41.0, 22.0 ],
+					"patching_rect" : [ 318.0, 112.0, 41.0, 22.0 ],
 					"text" : "click~"
 				}
 
@@ -192,20 +215,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 77.0, 223.0, 155.0, 22.0 ],
-					"text" : "gen~ at.calcClickLatency"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-74",
-					"linecount" : 12,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 304.0, 44.0, 278.0, 186.0 ],
-					"text" : "Qjack results:\n\n256bs = 768samp latency, which is 256 * 3\n512bs = 1536samp latency, which is 512 * 3\n\nMotu M4 results: \n\n256bs = 727samp latency, which is 256 * 2.8\n512bs = 1239samp latency, which is 512 * 2.41\n\nTAL results:\n512bs = varying! but  from 75 to 200samples.\n"
+					"patching_rect" : [ 175.0, 254.0, 162.0, 22.0 ],
+					"text" : "gen~ at.calc_time_difference"
 				}
 
 			}
@@ -218,7 +229,20 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 131.0, 201.0, 22.0 ]
+					"patching_rect" : [ 88.0, 94.0, 182.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "thresh",
+					"id" : "obj-4",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 28.0, 216.0, 160.0, 22.0 ]
 				}
 
 			}
@@ -246,8 +270,31 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 2 ]
 				}
 
 			}
@@ -269,6 +316,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-48", 0 ]
 				}
@@ -283,9 +337,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "at.calcClickLatency.gendsp",
-				"bootpath" : "~/OneDrive - Universitetet i Oslo/MyDrive/Sharing/latency blog post",
-				"patcherrelativepath" : "..",
+				"name" : "at.calc_time_difference.gendsp",
+				"bootpath" : "~/GitHub/audio-latency-examiner/src",
+				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
