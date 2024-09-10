@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -813,12 +813,12 @@
 					"patching_rect" : [ 257.355512619018555, 49.0, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Macintosh HD:/Users/riccardosimionato/Downloads/src/logo.icns",
-						"appicon_win" : "C:/Users/aleksati/GitHub/audio-latency-examiner/src/logo.ico",
+						"appicon_mac" : "C:/Users/aleks/Documents/GitHub/audio-latency-examiner/src/logo.icns",
+						"appicon_win" : "C:/Users/aleks/Documents/GitHub/audio-latency-examiner/src/logo.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 0,
-						"cefsupport" : 0,
+						"cefsupport" : 1,
 						"copysupport" : 0,
 						"database" : 0,
 						"extensions" : 0,
@@ -827,7 +827,7 @@
 						"noloadbangdefeating" : 0,
 						"overdrive" : 0,
 						"preffilename" : "ALEX",
-						"searchformissingfiles" : 1,
+						"searchformissingfiles" : 0,
 						"statusvisible" : 0,
 						"usesearchpath" : 1
 					}
@@ -1110,7 +1110,7 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-70",
-					"items" : [ "None", ",", "ad_asio", "ASIO Fireface USB", ",", "ad_asio", "ASIO4ALL v2", ",", "ad_asio", "AudioBox ASIO Driver", ",", "ad_asio", "FlexASIO", ",", "ad_asio", "ioStation ASIO Driver", ",", "ad_asio", "JackRouter", ",", "ad_asio", "MOTU Audio ASIO", ",", "ad_asio", "MOTU M Series", ",", "ad_asio", "ASIO PreSonus FireStudio", ",", "ad_asio", "Quantum ASIO driver", ",", "ad_asio", "Revelator ASIO", ",", "ad_asio", "Studio 192 ASIO", ",", "ad_asio", "Studio USB ASIO Driver", ",", "ad_asio", "StudioLive AR ASIO", ",", "ad_asio", "StudioLive Classic USB", ",", "ad_asio", "StudioLive Series III ASIO", ",", "ad_asio", "UMC ASIO Driver", ",", "ad_directsound", "", ",", "ad_mme", "", ",", "NonRealTime", ",", "ad_portaudio", "MME", ",", "ad_portaudio", "Windows DirectSound", ",", "ad_portaudio", "Windows WASAPI", ",", "ad_portaudio", "Windows WDM-KS", ",", "ad_rewire" ],
+					"items" : [ "None", ",", "ad_asio", "ASIO Fireface USB", ",", "ad_asio", "ASIO4ALL v2", ",", "ad_asio", "FlexASIO", ",", "ad_asio", "Focusrite Thunderbolt ASIO", ",", "ad_asio", "Focusrite USB ASIO", ",", "ad_asio", "JackRouter", ",", "ad_asio", "MOTU M Series", ",", "ad_asio", "UMC ASIO Driver", ",", "ad_directsound", "", ",", "ad_mme", "", ",", "NonRealTime", ",", "ad_portaudio", "MME", ",", "ad_portaudio", "Windows DirectSound", ",", "ad_portaudio", "Windows WASAPI", ",", "ad_portaudio", "Windows WDM-KS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1390,6 +1390,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "vst~[1]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "vst~",
 							"parameter_type" : 3
 						}
@@ -2323,8 +2324,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2912,8 +2913,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3557,8 +3558,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4288,11 +4289,12 @@
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "dictionary", "", "", "", "" ],
 					"patching_rect" : [ 1700.0, 2145.0, 313.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
+						"legacy" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
@@ -4386,6 +4388,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5068,6 +5071,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5296,6 +5300,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -5578,6 +5583,7 @@
 							"parameter_enum" : [ "External", "Internal", "VST" ],
 							"parameter_longname" : "live.tab",
 							"parameter_mmax" : 2,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9
@@ -7827,7 +7833,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "About.maxpat",
-				"bootpath" : "~/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -7835,27 +7841,27 @@
 , 			{
 				"name" : "ValhallaSpaceModulator.maxsnap",
 				"bootpath" : "~/OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../OneDrive - Universitetet i Oslo/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.calc_time_difference.gendsp",
-				"bootpath" : "~/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.scale_app_height.js",
-				"bootpath" : "~/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "at.scale_app_width.js",
-				"bootpath" : "~/GitHub/audio-latency-examiner/src",
+				"bootpath" : "~/Documents/GitHub/audio-latency-examiner/src",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
