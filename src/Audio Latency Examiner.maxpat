@@ -9,12 +9,35 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "openrect": [ 50.0, 50.0, 1378.69, 462.79 ],
+        "openrect": [ 50.0, 50.0, 1357.69, 440.79 ],
         "openrectmode": 0,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "title": "Audio Latency Examiner",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-66",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2117.0, 1650.0, 128.0, 22.0 ],
+                    "text": "TAL-Chorus-LX"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-64",
+                    "linecount": 3,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2117.0, 1588.5, 368.0, 50.0 ],
+                    "text": "\"C:/Program Files/Common Files/VST3/TAL-Chorus-LX.vst3/Contents/x86_64-win/TAL-Chorus-LX.vst3\""
+                }
+            },
             {
                 "box": {
                     "id": "obj-116",
@@ -105,7 +128,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1168.0, 1767.0, 231.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "gen~ @expr out1 = round(in1 * 100) / 100"
                 }
             },
@@ -242,6 +264,14 @@
             },
             {
                 "box": {
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color1": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color2": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "gradient",
+                    "blanksym": "",
                     "fontsize": 14.0,
                     "hint": "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
                     "id": "obj-43",
@@ -275,6 +305,13 @@
             },
             {
                 "box": {
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color1": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color2": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "gradient",
                     "fontsize": 14.0,
                     "hint": "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
                     "id": "obj-31",
@@ -308,10 +345,17 @@
             },
             {
                 "box": {
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color1": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color2": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "gradient",
                     "fontsize": 14.0,
                     "hint": "If nothing shows, try to re-enable the DSP and re-select your driver in the Driver menu.",
                     "id": "obj-18",
-                    "items": [ 44100, ",", 48000, ",", 96000, ",", 192000 ],
+                    "items": [ 22050, ",", 32000, ",", 44100, ",", 48000, ",", 64000, ",", 88200, ",", 96000, ",", 128000, ",", 176400, ",", 192000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -836,7 +880,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 257.35551261901855, 49.0, 70.0, 22.0 ],
+                    "patching_rect": [ 253.85551261901855, 55.0, 70.0, 22.0 ],
                     "saved_object_attributes": {
                         "allwindowsactive": 0,
                         "appicon_mac": "C:/Users/aleks/Documents/GitHub/audio-latency-examiner/src/logo.icns",
@@ -850,10 +894,10 @@
                         "extensions": 0,
                         "gensupport": 1,
                         "midisupport": 0,
-                        "noloadbangdefeating": 0,
+                        "noloadbangdefeating": 1,
                         "overdrive": 0,
                         "preffilename": "ALEX",
-                        "searchformissingfiles": 0,
+                        "searchformissingfiles": 1,
                         "statusvisible": 0,
                         "usesearchpath": 1
                     },
@@ -1110,6 +1154,14 @@
             },
             {
                 "box": {
+                    "allowdrag": 0,
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color1": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
+                    "bgfillcolor_color2": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "gradient",
                     "blanksym": "",
                     "fontsize": 14.0,
                     "id": "obj-70",
@@ -1150,6 +1202,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "cantchange": 1,
                     "fontface": 1,
                     "fontsize": 14.0,
@@ -1168,6 +1221,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "cantchange": 1,
                     "fontface": 1,
                     "fontsize": 14.0,
@@ -1341,13 +1395,14 @@
                     "angle": 270.0,
                     "bgcolor": [ 0.517647058823529, 0.482352941176471, 0.482352941176471, 0.23 ],
                     "bordercolor": [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.26 ],
+                    "hidden": 1,
                     "id": "obj-352",
                     "ignoreclick": 0,
                     "maxclass": "panel",
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 654.0, 1202.0, 128.0, 128.0 ],
+                    "patching_rect": [ 654.0, 1255.0, 128.0, 128.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 784.5423727631569, 6.0, 278.2203392982483, 193.0 ],
                     "proportion": 0.5,
@@ -1398,7 +1453,7 @@
                             "version": 1,
                             "isbank": 0,
                             "isbase64": 1,
-                            "blob": "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0SnQTZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+                            "blob": "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -1420,7 +1475,7 @@
                                         "version": 1,
                                         "isbank": 0,
                                         "isbase64": 1,
-                                        "blob": "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0SnQTZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+                                        "blob": "730.VMjLgDs....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9PiMy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtPjcyYTR5AkaA4hKtfjcXgzcTwjKDYVPB4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKAcyYUMTRSgjVC4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogzcyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHECNFEFLvXUV3fjPLQGUogjYPwlXzL1UYoGLogjcyHUSn4BdhoWUrI1Z3DyXuEkQi4FLogzcyHDSn4BdX4FNrIFLMcESqQiUXg1cVkENHIESz4RZHYFSFoUcIc0X4kzTYQWQrgkbUY0Sn4RZKYGRBgTZ3XUX1UjQi8VRVokbqYzXz.SLgoVUV8DZtj1R1gDdKkic4sjcIISXskzUXMWSs8zM2HzXmcGaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
                                     },
                                     "fileref": {
                                         "name": "ValhallaSpaceModulator",
@@ -1556,6 +1611,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.",
@@ -1575,6 +1631,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.\n\nPS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value. ",
@@ -1731,6 +1788,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.\n\nPS! If in Internal mode, the reference signal is passed directly to the measurement calculations, so you do NOT need to specify any channel value. ",
@@ -1750,6 +1808,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Choose the output and input channels on your audio driver that goes to and from the device and reference. Notice the patching area under the Mode selection change when you edit these numbers. See documentation for more info.",
@@ -1924,12 +1983,12 @@
                     "connectacrossdividers": 0,
                     "connections": [
                         {
-                            "in": 2,
+                            "in": 0,
                             "out": 0,
                             "gain": 1.0
                         },
                         {
-                            "in": 3,
+                            "in": 1,
                             "out": 1,
                             "gain": 1.0
                         }
@@ -1970,12 +2029,12 @@
                     "connections": [
                         {
                             "in": 0,
-                            "out": 2,
+                            "out": 0,
                             "gain": 1.0
                         },
                         {
                             "in": 1,
-                            "out": 3,
+                            "out": 1,
                             "gain": 1.0
                         }
                     ],
@@ -2033,14 +2092,13 @@
                     "angle": 270.0,
                     "bgcolor": [ 0.517647058823529, 0.482352941176471, 0.482352941176471, 0.23 ],
                     "bordercolor": [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.26 ],
-                    "hidden": 1,
                     "id": "obj-217",
                     "ignoreclick": 0,
                     "maxclass": "panel",
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 510.0, 1202.0, 128.0, 128.0 ],
+                    "patching_rect": [ 510.0, 1255.0, 128.0, 128.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1064.542372763157, 6.0, 257.6756339073181, 193.91890597343445 ],
                     "proportion": 0.5,
@@ -2174,7 +2232,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 633.6866622269154, 307.4814763665199, 167.75902381539345, 23.0 ],
                     "style": "AudioStatus_ItemName",
-                    "text": "Latency (ms) Average",
+                    "text": "Latency (ms) average",
                     "textcolor": [ 0.968627, 0.968627, 0.968627, 1.0 ]
                 }
             },
@@ -2191,7 +2249,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 633.4594171047211, 336.4236183166505, 168.18643736839294, 23.0 ],
                     "style": "AudioStatus_ItemName",
-                    "text": "Latency (samps) Average",
+                    "text": "Latency (samps) average",
                     "textcolor": [ 0.968627, 0.968627, 0.968627, 1.0 ]
                 }
             },
@@ -2664,6 +2722,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 12.0,
                     "hint": "",
@@ -3128,6 +3187,8 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "hint": "Specify the name of the device you intend to measure. This is stored in the data. ",
                     "id": "obj-328",
                     "maxclass": "textedit",
@@ -3279,6 +3340,8 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "id": "obj-264",
                     "maxclass": "textedit",
                     "numinlets": 1,
@@ -3910,13 +3973,15 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "id": "obj-229",
                     "maxclass": "dict.view",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1636.0, 2238.0, 230.5555517077446, 256.48147720098495 ],
                     "presentation": 1,
-                    "presentation_rect": [ 903.1226041316986, 250.99998331069946, 295.0, 144.0 ]
+                    "presentation_rect": [ 903.1226041316986, 250.99998331069946, 295.0, 144.0 ],
+                    "stripecolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ]
                 }
             },
             {
@@ -3967,9 +4032,10 @@
                     "activebgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "activebgoncolor": [ 0.0, 0.854901960784314, 0.282352941176471, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "activetextoncolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
                     "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
-                    "bgoncolor": [ 0.898039, 0.898039, 0.898039, 1.0 ],
-                    "bordercolor": [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
+                    "bgoncolor": [ 0.235, 0.235, 0.235, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "fontsize": 14.0,
                     "hint": "",
                     "id": "obj-95",
@@ -4434,6 +4500,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Adjust the rate of the audio playback sequence. A number of 1000 means that one audio clicks will be played every 1000ms. ",
@@ -4556,6 +4623,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "",
@@ -4587,7 +4655,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 633.6866622269154, 251.67565894126892, 166.44843050837517, 23.0 ],
                     "style": "AudioStatus_ItemName",
-                    "text": "Record Latency Values",
+                    "text": "Record latency values",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ]
                 }
             },
@@ -4596,9 +4664,10 @@
                     "activebgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "activebgoncolor": [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "activetextoncolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
                     "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
-                    "bgoncolor": [ 0.898039, 0.898039, 0.898039, 1.0 ],
-                    "bordercolor": [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
+                    "bgoncolor": [ 0.235, 0.235, 0.235, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "fontsize": 14.0,
                     "hint": "Record latency values as list values into the dictionary data structure. Before recording, make sure that the Impulse Playback and DSP are both enabled beforehand. PS! Recording also automatically erases all previous latency data in the dictionary.",
                     "id": "obj-181",
@@ -4664,12 +4733,13 @@
                     "presentation": 1,
                     "presentation_rect": [ 633.6866622269154, 278.70268416404724, 168.0, 23.0 ],
                     "style": "AudioStatus_ItemName",
-                    "text": "Latency Indices Collected",
+                    "text": "Latency values collected",
                     "textcolor": [ 0.968627, 0.968627, 0.968627, 1.0 ]
                 }
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "cantchange": 1,
                     "fontface": 1,
                     "fontname": "Arial",
@@ -4698,6 +4768,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "",
@@ -4707,7 +4778,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1768.0, 1023.0, 144.0, 26.0 ],
+                    "patching_rect": [ 1785.0, 1021.0, 144.0, 26.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1072.0, 92.0, 241.84616470336914, 26.92307949066162 ],
                     "text": "Refresh Plugin List",
@@ -4717,6 +4788,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Browse the file system to locate and load the internal plugin file.",
@@ -4736,6 +4808,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "hint": "Show/Hide the internal plugin GUI.",
@@ -4746,7 +4819,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1724.0, 1435.0, 101.0, 22.0 ],
+                    "patching_rect": [ 1724.0, 1435.0, 223.0, 16.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1072.0, 159.0, 242.0, 25.0 ],
                     "text": "Show and Configure Plugin",
@@ -4757,10 +4830,10 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
+                    "bgcolor": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_angle": 270.0,
                     "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
+                    "bgfillcolor_color": [ 0.30196078431372547, 0.30196078431372547, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_color1": [ 0.752941, 0.729412, 0.666667, 1.0 ],
                     "bgfillcolor_color2": [ 0.866667, 0.831373, 0.741176, 1.0 ],
                     "bgfillcolor_proportion": 0.5,
@@ -4770,7 +4843,7 @@
                     "fontsize": 14.0,
                     "hint": "Select a plugin from those found in default system folders.",
                     "id": "obj-1220",
-                    "items": [ "Analog Lab 4", ",", "Analog Lab V", ",", "DX7 V", ",", "Ghz Vulf Compressor 3", ",", "Neutone FX", ",", "Polysix", ",", "Prophet V3", ",", "SPAN", ",", "TAL-Chorus-LX", ",", "ValhallaFreqEcho", ",", "ValhallaFutureVerb", ",", "ValhallaPlate", ",", "ValhallaSpaceModulator", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb", ",", "ambix_binaural_o1", ",", "ambix_binaural_o3", ",", "ambix_converter_o1", ",", "ambix_converter_o3", ",", "ambix_decoder_o1", ",", "ambix_decoder_o3", ",", "ambix_directional_loudness_o1", ",", "ambix_directional_loudness_o3", ",", "ambix_encoder_i2_o1", ",", "ambix_encoder_i2_o3", ",", "ambix_encoder_i4_o1", ",", "ambix_encoder_i4_o3", ",", "ambix_encoder_i6_o1", ",", "ambix_encoder_i6_o3", ",", "ambix_encoder_i8_o1", ",", "ambix_encoder_i8_o3", ",", "ambix_encoder_o1", ",", "ambix_encoder_o3", ",", "ambix_maxre_o1", ",", "ambix_maxre_o3", ",", "ambix_mirror_o1", ",", "ambix_mirror_o3", ",", "ambix_rotator_o1", ",", "ambix_rotator_o3", ",", "ambix_rotator_z_o1", ",", "ambix_rotator_z_o3", ",", "ambix_vmic_o1", ",", "ambix_vmic_o3", ",", "ambix_warp_o1", ",", "ambix_warp_o3", ",", "ambix_widening_o1", ",", "ambix_widening_o3", ",", "Analog Lab V", ",", "DX7 V", ",", "Ghz Vulf Compressor 3", ",", "mcfx_convolver128", ",", "mcfx_convolver16", ",", "mcfx_convolver2", ",", "mcfx_convolver24", ",", "mcfx_convolver32", ",", "mcfx_convolver36", ",", "mcfx_convolver4", ",", "mcfx_convolver50", ",", "mcfx_convolver64", ",", "mcfx_convolver8", ",", "mcfx_delay128", ",", "mcfx_delay16", ",", "mcfx_delay2", ",", "mcfx_delay24", ",", "mcfx_delay32", ",", "mcfx_delay36", ",", "mcfx_delay4", ",", "mcfx_delay50", ",", "mcfx_delay64", ",", "mcfx_delay8", ",", "mcfx_filter128", ",", "mcfx_filter16", ",", "mcfx_filter2", ",", "mcfx_filter24", ",", "mcfx_filter32", ",", "mcfx_filter36", ",", "mcfx_filter4", ",", "mcfx_filter50", ",", "mcfx_filter64", ",", "mcfx_filter8", ",", "mcfx_gain_delay128", ",", "mcfx_gain_delay16", ",", "mcfx_gain_delay2", ",", "mcfx_gain_delay24", ",", "mcfx_gain_delay32", ",", "mcfx_gain_delay36", ",", "mcfx_gain_delay4", ",", "mcfx_gain_delay50", ",", "mcfx_gain_delay64", ",", "mcfx_gain_delay8", ",", "mcfx_meter128", ",", "mcfx_meter16", ",", "mcfx_meter2", ",", "mcfx_meter24", ",", "mcfx_meter32", ",", "mcfx_meter36", ",", "mcfx_meter4", ",", "mcfx_meter50", ",", "mcfx_meter64", ",", "mcfx_meter8", ",", "Polysix", ",", "Prophet V3" ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4794,7 +4867,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1568.0, 1317.0, 119.0, 23.0 ],
+                    "patching_rect": [ 1559.5, 1318.0, 119.0, 23.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1072.0, 59.0, 115.0, 23.0 ],
                     "text": "Avaliable Plugins",
@@ -4806,9 +4879,10 @@
                     "activebgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "activebgoncolor": [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "activetextoncolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
                     "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
-                    "bgoncolor": [ 0.898039, 0.898039, 0.898039, 1.0 ],
-                    "bordercolor": [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
+                    "bgoncolor": [ 0.235, 0.235, 0.235, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "fontsize": 14.0,
                     "hint": "Start the audio playback and send periodic sequences of audio clicks to the device you want to measure and as reference for when measuring. PS! DSP must be enabled before audio playback can start. ",
                     "id": "obj-561",
@@ -4862,12 +4936,14 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "id": "obj-215",
                     "maxclass": "meter~",
                     "monotone": 1,
                     "numinlets": 1,
                     "numleds": 10,
                     "numoutlets": 1,
+                    "offcolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "outlettype": [ "float" ],
                     "patching_rect": [ 886.0, 913.0, 15.604032039642334, 83.17871379852318 ],
                     "presentation": 1,
@@ -4876,12 +4952,14 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "id": "obj-214",
                     "maxclass": "meter~",
                     "monotone": 1,
                     "numinlets": 1,
                     "numleds": 10,
                     "numoutlets": 1,
+                    "offcolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "outlettype": [ "float" ],
                     "patching_rect": [ 868.0, 1772.0, 15.604032039642334, 83.17871379852318 ],
                     "presentation": 1,
@@ -4890,12 +4968,14 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "id": "obj-213",
                     "maxclass": "meter~",
                     "monotone": 1,
                     "numinlets": 1,
                     "numleds": 10,
                     "numoutlets": 1,
+                    "offcolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "outlettype": [ "float" ],
                     "patching_rect": [ 1004.0, 1894.0, 15.604032039642334, 83.17871379852318 ],
                     "presentation": 1,
@@ -4968,6 +5048,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial",
                     "fontsize": 14.0,
@@ -4987,6 +5068,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial",
                     "fontsize": 14.0,
@@ -5006,6 +5088,7 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 14.0,
                     "format": 6,
@@ -5080,6 +5163,7 @@
                     "activebgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "activebgoncolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "bgcolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bordercolor": [ 0.34901960784313724, 0.34901960784313724, 0.34901960784313724, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial Medium",
                     "fontsize": 14.0,
@@ -5103,6 +5187,9 @@
                             "expression": ""
                         },
                         "bgcolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
                             "expression": ""
                         },
                         "textcolor": {
@@ -5455,6 +5542,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-101", 0 ],
+                    "order": 1,
+                    "source": [ "obj-103", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-64", 1 ],
+                    "order": 0,
                     "source": [ "obj-103", 0 ]
                 }
             },
@@ -6120,6 +6215,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-101", 0 ],
+                    "order": 1,
                     "source": [ "obj-226", 1 ]
                 }
             },
@@ -6127,6 +6223,13 @@
                 "patchline": {
                     "destination": [ "obj-302", 0 ],
                     "source": [ "obj-226", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-66", 1 ],
+                    "order": 0,
+                    "source": [ "obj-226", 1 ]
                 }
             },
             {
@@ -7088,6 +7191,14 @@
             "obj-455": [ "vst~[1]", "vst~", 0 ],
             "obj-561": [ "live.text[2]", "live.text", 0 ],
             "obj-95": [ "live.text[5]", "live.text", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
