@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -165,7 +165,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.481359481811523, 338.01539134979248, 159.0, 47.0 ],
+					"patching_rect" : [ 32.481359481811523, 338.01539134979248, 159.0, 48.0 ],
 					"text" : "nomenu is to dsiable the Max console from opening when the standalone opens ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -202,7 +202,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.481359481811523, 392.01539134979248, 255.0, 74.0 ],
+					"patching_rect" : [ 154.481359481811523, 392.01539134979248, 255.0, 75.0 ],
 					"text" : "A trick to avoid users being able to adjust the window size when the app is loaded. The automatic scaling will adjust the size. However, for development, press the G key to enable the window adjust. ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -402,7 +402,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.228521347045898, 304.01539134979248, 247.0, 35.0 ],
+					"patching_rect" : [ 561.228521347045898, 304.01539134979248, 247.0, 36.0 ],
 					"text" : "window zoomfactor 1, window exec, window size 50. 50. 700.4 740., window exec"
 				}
 
@@ -441,7 +441,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.228521347045898, 526.01539134979248, 182.0, 60.0 ],
+					"patching_rect" : [ 596.228521347045898, 526.01539134979248, 182.0, 62.0 ],
 					"text" : "If the default App width is bigger than screen width, this object automatically scales (adjusts zoom factor) down the App UI.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -458,7 +458,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, -2.0, 650.0, 692.0 ],
 					"rendermode" : 0,
-					"url" : "https://aleksati.net/works/audio-latency-examiner"
+					"url" : "https://aleksati.net/projects/audio-latency-examiner"
 				}
 
 			}
@@ -470,8 +470,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.397092700004578, 91.437597036361694, 54.0, 35.0 ],
-					"text" : ";\rmax quit"
+					"patching_rect" : [ 178.397092700004578, 91.437597036361694, 54.0, 36.0 ],
+					"text" : ";\r\nmax quit"
 				}
 
 			}
